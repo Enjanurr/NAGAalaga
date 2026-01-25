@@ -1,7 +1,0 @@
-﻿node_modules/
-client-mobile/node_modules/
-server/node_modules/
-.env
-.expo/
-dist/
-build/
