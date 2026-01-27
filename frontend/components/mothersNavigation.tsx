@@ -7,13 +7,14 @@ import { motion } from 'framer-motion';
 
 const links = [
   { path: '/', name: 'Home' },
-   { path: '/dashboard', name: 'Dashboard' },
-  { path: '/check', name: 'Check' },
-  { path: '/card', name: 'Card' },
-  { path: '/alert', name: 'Alerts' },
+   { path: '/mothers/dashboard', name: 'Dashboard' },
+  { path: '/mothers/check', name: 'Check' },
+  { path: '/mothers/card', name: 'Card' },
+   { path: '/mothers/selectHospital', name: 'Appointment' },
+  { path: '/mothers/alert', name: 'Alerts' },
 ];
 
-export default function Navigation() {
+export default function MothersNavigation() {
   const pathname = usePathname();
 
   return (

@@ -1,6 +1,8 @@
 'use client'
 
-import { FaHeart, FaCalendar, FaBell } from "react-icons/fa"
+import { FaRegHeart } from "react-icons/fa6";
+import { FaRegCalendar } from "react-icons/fa";
+import { FaRegBell } from "react-icons/fa";
 
 type HeaderProps = {
   title: string
@@ -17,17 +19,17 @@ export default function Headers({
   const renderIcon = () => {
     switch (icon) {
       case "calendar":
-        return <FaCalendar size={32} />
+        return <FaRegCalendar size={32} />
       case "bell":
-        return <FaBell size={32} />
+        return <FaRegBell size={32} />
       default:
-        return <FaHeart size={32} />
+        return <FaRegHeart size={32} />
     }
   }
 
   return (
     <section>
-      <div className="flex items-center gap-5 rounded-2xl border border-[#3F2870] bg-[#F2EFF9] p-6">
+      <div className="flex items-center gap-5 rounded-2xl bg-[#F2EFF9] p-7 shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all">
 
         {/* Icon */}
         <div className="flex h-14 w-14 items-center justify-center text-[#3F2870]">
