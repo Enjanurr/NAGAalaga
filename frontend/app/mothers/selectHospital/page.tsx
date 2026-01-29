@@ -36,7 +36,7 @@ export default function Hospitals() {
 
         <section>
           <h1 className="text-2xl font-semibold text-[#3F2870] mb-4">Available Hospitals</h1>
-          <div className="space-y-4">
+          <div className="space-y-4 cursor-pointer">
             {hospitals.map((hospital) => (
               <Link
                 key={hospital.id}

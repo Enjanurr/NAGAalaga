@@ -7,7 +7,7 @@ type Doctor = {
   name: string
   hospital: string
 }
-
+  
 export default function Appointment() {
   const params = useParams()
 
@@ -57,11 +57,11 @@ export default function Appointment() {
 
         {/* Date & Time */}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold text-[#3F2870]">
+          <h2 className="text-xl font-semibold text-[#3F2870] mt-6">
             Select Date & Time
           </h2>
 
-          <select className="w-full rounded-xl bg-[#E6E1F2] p-4 text-sm text-[#1B1530] outline-none focus:ring-2 focus:ring-[#3F2870]">
+          <select className="w-full rounded-xl bg-[#E6E1F2] p-4 text-sm text-[#1B1530] outline-none focus:ring-2 focus:ring-[#3F2870] cursor-pointer">
             <option>January 30, 2026 - 09:00 AM</option>
             <option>January 30, 2026 - 01:30 PM</option>
             <option>February 1, 2026 - 10:00 AM</option>
@@ -71,7 +71,7 @@ export default function Appointment() {
 
         {/* Reason */}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold text-[#3F2870]">
+          <h2 className="text-xl font-semibold text-[#3F2870] mt-6 mb-3">
             Reason for Appointment
           </h2>
 
@@ -84,7 +84,7 @@ export default function Appointment() {
 
         {/* Submit */}
         <section>
-          <button className="w-full py-3 rounded-lg bg-[#3F2870] text-white font-bold hover:opacity-90 transition">
+          <button className="w-full py-3 rounded-lg bg-[#3F2870] text-white font-bold hover:opacity-90 transition mt-6 cursor-pointer">
             Set Appointment
           </button>
         </section>

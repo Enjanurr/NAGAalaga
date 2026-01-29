@@ -8,10 +8,12 @@ import { motion } from 'framer-motion';
 const links = [
   { path: '/', name: 'Home' },
    { path: '/mothers/dashboard', name: 'Dashboard' },
+    { path: '/mothers/selectHospital', name: 'Appointment' },
   { path: '/mothers/check', name: 'Check' },
   { path: '/mothers/card', name: 'Card' },
-   { path: '/mothers/selectHospital', name: 'Appointment' },
-  { path: '/mothers/alert', name: 'Alerts' },
+    { path: '/mothers/chat', name: 'Chat' },
+  
+  { path: '/mothers/alert', name: 'Notification' },
 ];
 
 export default function MothersNavigation() {

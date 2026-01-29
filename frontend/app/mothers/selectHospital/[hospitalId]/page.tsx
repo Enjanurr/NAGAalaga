@@ -39,7 +39,7 @@ export default function Doctors() {
             Available Doctors
           </h1>
 
-          <div className="space-y-4">
+          <div className="space-y-4 cursor-pointer">
             {doctors.map((doc) => (
               <Link
                 key={doc.id}

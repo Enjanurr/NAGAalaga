@@ -5,11 +5,11 @@ import { FaStethoscope } from "react-icons/fa"
 
 export default function Dashboard() {
   return (
-       <main className="min-h-screen bg-[#F2EFF9] px-6 pt-20">
+       <main className="min-h-screen bg-[#F2EFF9] px-6 pt-15">
      <div className="mx-30">
 
         {/* Doctor Header */}
-        <section>
+        <section className="">
           <div className="flex items-center gap-5 rounded-2xl bg-[#F2EFF9] p-7 shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all">
             {/* Avatar */}
             <div className="flex h-14 w-14 items-center justify-center text-[#3F2870]">
@@ -29,7 +29,7 @@ export default function Dashboard() {
         </section>
 
         {/* Quick Actions */}
-        <h1 className="text-2xl font-semibold text-[#3F2870]">
+        <h1 className="text-2xl font-semibold text-[#3F2870] mt-6">
           Quick Actions
         </h1>
 
@@ -64,7 +64,7 @@ export default function Dashboard() {
         </section>
 
         {/* Barangay Notifications */}
-        <h1 className="text-2xl font-semibold text-[#3F2870]">
+        <h1 className="text-2xl font-semibold text-[#3F2870] mt-6">
           Barangay Notifications
         </h1>
 
