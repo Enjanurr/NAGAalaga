@@ -12,7 +12,6 @@ const links = [
   { path: '/mothers/check', name: 'Check' },
   { path: '/mothers/card', name: 'Card' },
     { path: '/mothers/chat', name: 'Chat' },
-  
   { path: '/mothers/alert', name: 'Notification' },
 ];
 

@@ -4,15 +4,7 @@ import Link from "next/link"
 
 export default function Patients() {
   const patients = [
-    {
-      id: "1",
-      name: "Maria Clara De Los Santos",
-      age: 34,
-      dob: "November 23, 1988",
-      location: "Naga City",
-      lastCheckup: "Jan 12, 2026 - Monthly Check Up",
-      center: "Barangay Calauag Health Center"
-    },
+  
     {
       id: "2",
       name: "Ana Mae Dela Cruz",
@@ -52,6 +44,34 @@ export default function Patients() {
           </h1>
 
           <div className="space-y-4">
+             <div className="flex w-full items-start gap-4 p-6">
+
+      {/* Left date */}
+      <div className="text-black font-extrabold whitespace-nowrap">
+       Jan 12, 2026 
+      </div>
+
+      {/* Right content */}
+     <Link href={"/doctor/demo/"}> <div className="flex-1">
+
+        <h1 className="text-base font-bold text-[#3F2870]">
+          Maria Clara  — Age 34
+        </h1>
+
+        <p className="mt-1 text-sm text-[#1B1530] opacity-80">
+          Jan 12, 2026 - Monthly Check Up
+        </p>
+
+        <p className="mt-1 text-xs text-[#1B1530] opacity-70">
+          Barangay Calauag Health Center, Naga City
+        </p>
+
+        <p className="mt-1 text-xs opacity-60">
+          DOB: February 10, 1997
+        </p>
+
+      </div></Link>
+    </div>
           {patients.map((p) => (
   <Link
     key={p.id}
