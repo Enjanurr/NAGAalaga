@@ -82,6 +82,7 @@ export default function Demo() {
 
         {!triage && <p>No triage data found.</p>}
 
+   
         {triage && (
           <div className="rounded-2xl bg-[#F2EFF9] p-6 shadow-md space-y-3 text-[#3F2870]">
 
@@ -126,15 +127,32 @@ export default function Demo() {
         )}
 
         {/* Confirm Button */}
-        {triage && !triage.doctorConfirmed && (
-          <button
-            onClick={handleConfirm}
-            disabled={confirming}
-            className="w-full rounded-xl bg-[#3F2870] py-3 text-white font-bold disabled:opacity-50 mt-5 cursor-pointer"
-          >
-            {confirming ? "Confirming..." : "Confirm Assessment"}
-          </button>
-        )}
+   {triage && !triage.doctorConfirmed && (
+  <div className="mt-6 flex gap-3">
+    {/* Edit */}
+    <button
+      className="w-full rounded-xl border border-[#3F2870] py-2.5 text-[#3F2870] font-semibold hover:bg-[#3F2870]/5 transition cursor-pointer"
+    >
+      Edit response
+    </button>
+
+    {/* Reject (destructive) */}
+    <button
+      className="w-full rounded-xl border border-red-500 py-2.5 text-red-500 font-semibold hover:bg-red-50 transition cursor-pointer"
+    >
+      Reject
+    </button>
+
+    {/* Confirm (primary) */}
+    <button
+      onClick={handleConfirm}
+      disabled={confirming}
+      className="w-full rounded-xl bg-[#3F2870] py-3 text-white font-bold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#2f1e55] transition cursor-pointer"
+    >
+      {confirming ? "Confirming..." : "Confirm Assessment"}
+    </button>
+  </div>
+)}
 
         {/* Already confirmed */}
         {triage?.doctorConfirmed && (

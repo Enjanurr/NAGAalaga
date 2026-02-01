@@ -1,3 +1,5 @@
+'use client'
+import Link from 'next/link';
 import { FaStethoscope, FaGraduationCap, FaCertificate, FaHospital, FaUserMd, FaClock, FaCalendarAlt, FaCheckCircle, FaCommentDots } from "react-icons/fa"
 import { useParams, useRouter } from "next/navigation"
 import { useState } from "react"
@@ -501,6 +503,7 @@ export default function Appointment() {
                     </div>
 
                     {/* Message Doctor Button */}
+                   <Link href="/mothers/chats">
                     <button
                       onClick={handleMessageDoctor}
                       className="w-full bg-gradient-to-r from-[#3F2870] to-[#5a3d99] hover:from-[#5a3d99] hover:to-[#3F2870] text-white font-bold py-4 rounded-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-3 group"
@@ -508,6 +511,7 @@ export default function Appointment() {
                       <FaCommentDots className="text-xl group-hover:scale-110 transition-transform" />
                       <span>Message {doctor.name.split(' ')[1]}</span>
                     </button>
+                    </Link>
 
                     {/* Secondary Actions */}
                     <div className="pt-4 space-y-2">

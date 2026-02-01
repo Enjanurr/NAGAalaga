@@ -3,8 +3,7 @@
 import Link from "next/link"
 import { FaUser } from "react-icons/fa"
 
-const patients = [
-  {
+{/*  {
     id: "p1",
     name: "Maria Clara De Los Santos",
     age: 34,
@@ -12,7 +11,9 @@ const patients = [
     location: "Naga City",
     lastCheckup: "Jan 12, 2026 - Monthly Check Up",
     center: "Barangay Calauag Health Center"
-  },
+  }, */}
+const patients = [
+
   {
     id: "p2",
     name: "Ana Mae Dela Cruz",
@@ -49,13 +50,31 @@ export default function PatientChatInbox() {
         <h1 className="text-2xl font-semibold text-[#3F2870]">
           Patient Messages
         </h1>
+        <div>
+          <div className="flex h-12 w-12 items-center justify-center text-[#3F2870]">
+                <FaUser size={24} />
+              </div>
+          
+        </div>
+    
+        <section className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-1">
+          <Link href="/doctor/chat"
+           className="flex flex-col rounded-2xl bg-[#F2EFF9] shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all p-6 cursor-pointer">
+              {/* Text */}
+              <div className="flex-1">
+                <h2 className="font-semibold text-[#3F2870]">Maria Clara De Los Santos</h2>
+                <p className="text-sm text-[#3F2870] opacity-80 truncate">
+                  Barangay Calauag Health Center • Last Checkup: Jan 12, 2026 - Monthly Check Up
+                </p>
+              </div>
 
-        <section className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              {/* Status */}
+              <span className="text-xs text-green-600 font-semibold">Online</span></Link>
           {patients.map(patient => (
             <Link
               key={patient.id}
               href={`/doctor/patientChat/${patient.id}`}
-              className="flex items-center gap-4 rounded-2xl bg-white p-6 shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all"
+              className="flex flex-col rounded-2xl bg-[#F2EFF9] shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all p-6 cursor-pointer"
             >
               {/* Icon */}
               <div className="flex h-12 w-12 items-center justify-center text-[#3F2870]">
