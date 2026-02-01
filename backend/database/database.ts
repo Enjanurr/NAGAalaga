@@ -89,7 +89,7 @@ export const Triage = model<TriageDocument>("Triage", triageSchema);
 export const connectDB = async () => {
   try {
     await mongoose.connect(connection_string_atlas);
-    console.log("MongoDB connected");
+    console.log("MongoDB connected bruhh");
   } catch (error) {
     console.log("Database Failed to Connect", error);
     process.exit(1);

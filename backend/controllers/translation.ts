@@ -3,10 +3,11 @@ import { Triage } from "../database/database";
 
 /* ---------- Get latest triage for Doctor (English only) ---------- */
 export const getLatestTriageForDoctor = async (req: Request, res: Response) => {
+  console.log("test")
   try {
     const triage = await Triage.findOne().sort({ createdAt: -1 });
 
-    if (!triage) return res.status(404).json({ error: "No triage found" });
+    if (!triage) return res.status(404).json({ error: "No triage found bruhh" });
 
     console.log(triage); // 🔥 Add this to see the output
     res.json(triage);
