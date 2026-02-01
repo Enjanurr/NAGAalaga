@@ -6,27 +6,27 @@ export default function Hospitals() {
   const hospitals = [
     {
       id: "1",
-      name: "Barangay Calauag Health Center",
-      address: "Naga City, Camarines Sur",
-      description: "Provides prenatal check-ups, maternal health consultations, and vaccination services.",
+      name: "Abella Barangay Health Station",
+      address: "Zone 4 Urban, Abella, Naga City",
+      description: "Women's Health Services (VIA, Breast Cancer Screening) - Quarterly",
     },
     {
       id: "2",
-      name: "Naga City Health Office",
-      address: "Naga City, Camarines Sur",
-      description: "Offers postpartum wellness programs and routine maternal check-ups.",
+      name: "Carolina Barangay Health Station",
+      address: "Zone 3 Carolina, Naga City",
+      description: "Teenage Pregnancy & Adolescent Counseling  - Every Friday",
     },
     {
       id: "3",
-      name: "Barangay Concepcion Grande Health Center",
-      address: "Naga City, Camarines Sur",
-      description: "Prenatal and postnatal care, immunizations, and health education for mothers.",
+      name: "Balatas Barangay Health Station",
+      address: "Zone 3 Kayanga Street, Balatas, Naga City",
+      description: "Adolescent Health Services - every Tuesday and Thursday",
     },
     {
       id: "4",
-      name: "Barangay Triangulo Health Center",
-      address: "Naga City, Camarines Sur",
-      description: "Routine check-ups, blood pressure monitoring, and infant vaccination services.",
+      name: "Concepcion Grande Barangay Health Station",
+      address: "Zone 4 Barangay Hall,Concepcion Grande, Naga City",
+      description: "Adolescent Health Services - every 1st Friday of the Month",
     }
   ]
 

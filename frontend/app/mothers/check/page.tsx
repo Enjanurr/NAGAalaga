@@ -127,6 +127,19 @@ export default function Check() {
               </p>
             </div>
           )}
+           <div className="mt-6 rounded-2xl bg-green-50 border border-green-400 p-6">
+              <h2 className="text-lg font-bold text-[#3F2870] mb-2">
+                Doctor Confirmed Diagnosis
+              </h2>
+
+              <p className="font-semibold text-[#3F2870]">
+                Status: Confirmed
+              </p>
+
+              <p className="mt-2 text-[#3F2870]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias asperiores ut explicabo et provident tempore quae voluptate quod natus.</p>
+
+              <p className="mt-2 text-sm opacity-70 text-[#3F2870]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At placeat, vero saepe accusantium illum quidem porro est vel nulla incidunt!</p>
+            </div>
 
           {/* Confirmed Card */}
           {confirmed?.doctorConfirmed && (

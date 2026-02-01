@@ -3,8 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #3F2870; /* your primary color */
-  --input:#F2EFF9;
+  
 }
 
 @theme inline {
@@ -21,10 +20,6 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 

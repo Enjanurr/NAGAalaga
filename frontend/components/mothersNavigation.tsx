@@ -8,10 +8,11 @@ import { motion } from 'framer-motion';
 const links = [
   { path: '/', name: 'Home' },
    { path: '/mothers/dashboard', name: 'Dashboard' },
+    { path: '/mothers/check', name: 'Check' },
     { path: '/mothers/selectHospital', name: 'Appointment' },
-  { path: '/mothers/check', name: 'Check' },
+ 
   { path: '/mothers/card', name: 'Card' },
-    { path: '/mothers/chat', name: 'Chat' },
+    { path: '/mothers/chats', name: 'Chat' },
   { path: '/mothers/alert', name: 'Notification' },
 ];
 

@@ -70,7 +70,7 @@ export default function Demo() {
 
   return (
     <main className="min-h-screen bg-[#F2EFF9] px-6 pt-20">
-      <div className="mx-auto max-w-3xl space-y-8">
+      <div className="mx-auto max-w-3xl space-y-8 ">
 
         <Link href="/doctor/patients" className="text-[#3F2870] font-semibold">
           ← Back
